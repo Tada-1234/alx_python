@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""This is my edges"""
 word= "Holberton"
 word_first_3 = word[:3] #using indexing
 word_last_2 = word[-2:]
