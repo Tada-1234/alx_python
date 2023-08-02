@@ -4,7 +4,7 @@ def print_arguments(argv):
     num_arguments = len(argv)
 
     if num_arguments == 0:
-        print("0 argument.")
+        print("0 arguments.")
         return
 
     print(f"{num_arguments} argument{'s' if num_arguments > 1 else ''}:")
