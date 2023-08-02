@@ -1,19 +1,14 @@
 import sys
 
 def print_arguments(argv):
-    arguments = len(argv)
-    position = 1
+    num_arguments = len(argv)
 
-    if arguments == 1 or arguments > 2:
-        print("arguments.{:d}\n".format(arguments))
-        for n in range(0, arguments):
-            print("{:d}: {:s}\n".format(position, sys.argv[n]))
-            position = position + 1
-    else:
-        print("argument.{:d}\n".format(arguments))
-        for n in range(0, arguments):
-            print("{:d}: {:s}\n".format(position, sys.argv[n]))
-            position = position + 1
+    if num_arguments == 0:
+        print("0 argument.")
+        return
+
+    print(f"{num_arguments} argument{'s' if num_arguments > 1 else ''}:")
+    for i, arg in enumerate(argv, start=1):
 
 if __name__ == "__main__":
     args = sys.argv[1:]
