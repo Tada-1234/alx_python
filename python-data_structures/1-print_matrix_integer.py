@@ -1,8 +1,7 @@
 def print_matrix_integer(matrix=[[]]):
     if isinstance(matrix, list):
         for row in matrix:
-           for element in row:
-                print("{:d} ".format(element), end="")
-           print("")
+           formatted_row = " ".join("{:1}".format(value) for value in row)
+           print(formatted_row)
     else:
         print("{:}".format(matrix))
