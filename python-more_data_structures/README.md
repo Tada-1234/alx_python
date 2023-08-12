@@ -1,0 +1,1 @@
+Directory on lambda, filter, reduce, map and all relevant things
