@@ -1,6 +1,7 @@
 """
-this module creates a square class
+This module creates a square class
 """
+
 class Square:
     """ 
     Square Class
@@ -15,7 +16,7 @@ class Square:
         ValueError: If size is less than 0.
     """
     def __init__(self, size=0):
-""" 
+        """ 
         Constructor for Square class.
         
         Initializes a Square object with a given size, which defaults to 0 
