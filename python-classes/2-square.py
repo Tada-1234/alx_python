@@ -2,7 +2,7 @@
 This module creates a square class
 """
 class Square:
-""" 
+    """ 
     Square Class
     
     A Square class that defines a square by its size and allows calculation of its area.
