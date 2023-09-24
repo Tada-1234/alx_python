@@ -1,3 +1,7 @@
+"""
+This module is used to create a square class
+"""
+
 class Square:
     """
     Square Class
