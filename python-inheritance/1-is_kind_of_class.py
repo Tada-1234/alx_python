@@ -1,21 +1,26 @@
 """
-This module returns true if the object is an instance of a class
+This module checks if the object is an instance of, 
+or if the object is an instance of a class that inherited from, 
+the specified class.
 """
 def is_same_class(obj, a_class):
     """
-    Function checks if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class
+    The function checks if the object is an instance of the specified class or 
+    an instance of a class that inherited from the specified class.
     
     Args: 
-        obj: the object we want to check
-        a_class: the class we want to check against
-
-    Returns:
-        bool: True if an instance and false if not
-    """
-    if type(obj) is a_class: #Check if its an instance a class
-        return True
+        obj (object): The object to be checked.
+        a_class (type): The class (or a tuple of classes) to check against.
     
-    for cls in type(obj).mro(): #Check if its an instance of an inherited class
-        if cls is a_class: #Checks if its a class
+    Returns:
+        bool: Returns True if 'obj' is an instance of 'a_class' or an instance
+              of a class that inherited from 'a_class', otherwise False.
+    """
+    if type(obj) is a_class: # Check if 'obj' is an exact instance of 'a_class'
+        return True
+
+     # Check if 'obj' is an instance of a class that inherited from 'a_class'
+    for cls in type(obj).mro():
+        if cls is a_class:
             return True
     return False
