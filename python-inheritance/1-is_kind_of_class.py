@@ -3,7 +3,7 @@ This module returns true if the object is an instance of a class
 """
 def is_same_class(obj, a_class):
     """
-    Function checks if its an instance of a class
+    Function checks if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class
     
     Args: 
         obj: the object we want to check
