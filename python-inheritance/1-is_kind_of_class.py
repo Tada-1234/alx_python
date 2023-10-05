@@ -12,10 +12,10 @@ def is_same_class(obj, a_class):
     Returns:
         bool: True if an instance and false if not
     """
-    if type(obj) is a_class:
+    if type(obj) is a_class: #Check if its an instance a class
         return True
     
-    for cls in type(obj).mro():
-        if cls is a_class:
+    for cls in type(obj).mro(): #Check if its an instance of an inherited class
+        if cls is a_class: #Checks if its a class
             return True
     return False
