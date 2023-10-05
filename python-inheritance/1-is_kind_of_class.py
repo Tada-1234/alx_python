@@ -1,12 +1,12 @@
 """
 This module checks if the object is an instance of, 
-or if the object is an instance of a class that inherited from, 
+or if the object is an instance of a class that inherited, 
 the specified class.
 """
 def is_same_class(obj, a_class):
     """
     The function checks if the object is an instance of the specified class or 
-    an instance of a class that inherited from the specified class.
+    an instance of a class that inherited the specified class.
     
     Args: 
         obj (object): The object to be checked.
@@ -14,7 +14,7 @@ def is_same_class(obj, a_class):
     
     Returns:
         bool: Returns True if 'obj' is an instance of 'a_class' or an instance
-              of a class that inherited from 'a_class', otherwise False.
+              of a class that inherited 'a_class', otherwise False.
     """
     if type(obj) is a_class: # Check if 'obj' is an exact instance of 'a_class'
         return True
