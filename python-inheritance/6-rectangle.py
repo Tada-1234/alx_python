@@ -1,7 +1,8 @@
 """
-This module creates a class that inherits from another class
-"""
 
+This module creates a class that inherits from another class
+
+"""
 class Rectangle(BaseGeometry):
     """
     This class test the variable
