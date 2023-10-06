@@ -1,8 +1,6 @@
 """
 This module returns true if the object is an instance of a class
-"""
 
-"""
 Function checks if its an instance of a class
 
 Args: 
