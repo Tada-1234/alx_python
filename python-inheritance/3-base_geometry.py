@@ -11,6 +11,7 @@ class BaseGeometry:
     Returns:
         nothing
     """
+    @classmethod
     def __dir__(self):
         attributes = super().__dir__()  # Get the default dir()
         filtered_attributes = [attr for attr in attributes if attr != '__init_subclass__']
