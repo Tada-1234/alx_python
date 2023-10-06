@@ -1,7 +1,6 @@
 """
-
+6-Rectangle.py:
 This module creates a class that inherits from another class
-
 """
 class Rectangle(BaseGeometry):
     """
