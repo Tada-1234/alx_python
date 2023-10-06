@@ -1,6 +1,7 @@
 """
-This module creates a class that inherits from another class
+This module creates a class that inherits from another class and calculates its own area.
 """
+
 class BaseGeometry:
     """
     This class raises exceptions
