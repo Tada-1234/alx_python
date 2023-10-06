@@ -90,6 +90,15 @@ class Rectangle(BaseGeometry):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
 class Square(Rectangle):
+    """
+    This class test the variable
+
+    Args:
+         __size: a private size value
+
+    Attributes:
+         __size: a private size value
+    """
     def __init__(self, size):
         """
         Initializes the class and checks the variables
