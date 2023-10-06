@@ -33,17 +33,18 @@ class BaseGeometry:
             raise TypeError(name + " must be an integer")
         if value <= 0:
             raise ValueError(name + " must be greater than 0")
-
+        else:
+            return
+    def __dir__(self):
         """
         Overrides dir()
-
+    
         Args:
             self: the class itself
         
         Returns:
             nothing
         """
-    def __dir__(self):
         attributes = super().__dir__()  # Get the default dir()
         filtered_attributes = [attr for attr in attributes if attr != '__init_subclass__']
         return filtered_attributes
