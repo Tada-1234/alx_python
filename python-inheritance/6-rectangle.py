@@ -5,6 +5,14 @@ This module creates a class that inherits from another class
 class Rectangle(BaseGeometry):
     """
     This class test the variable
+    
+    Args:
+        __width: a private width value
+        __height: a private height value
+
+    Attributes:
+        __width: a private width value
+        __height: a private height value
     """
     def __init__(self, width, height):
         """
