@@ -49,7 +49,7 @@ class Square(Rectangle):
         Returns:
             the private/protected value
         """
-        return self.__size
+        return self.width
     
     @size.setter
     def size(self, size):
@@ -63,8 +63,4 @@ class Square(Rectangle):
         Returns:
             nothing
         """
-        if type(size) is not int:
-            raise TypeError("width must be an integer")
-        if size <= 0:
-            raise ValueError("width must be > 0")
-        self.__size = size
+        self.width = size
