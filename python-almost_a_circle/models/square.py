@@ -1,6 +1,12 @@
+"""
+This module creates a square
+"""
 from models.rectangle import Rectangle
 
 class Square(Rectangle):
+    """
+    This class creates a square from a rectangle
+    """
     def __init__(self, size, x=0, y=0, id=None):
         '''
         Function initiates and counts objects
