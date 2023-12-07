@@ -4,8 +4,12 @@ This module holds the number of objects created from the class
 from models.base import Base
 
 class Rectangle(Base):
+    """
+    This class creates a rectangle
+    """
+    
     def __init__(self, width, height, x=0, y=0, id=None):
-        '''
+        """
         Function initiates and counts objects
 
         Args:
@@ -18,7 +22,7 @@ class Rectangle(Base):
 
         Returns:
             Nothing/error
-        '''
+        """
         super().__init__(id)
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -42,7 +46,7 @@ class Rectangle(Base):
         self.__y = y
 
     def __str__(self):
-        '''
+        """
         Overrides __str__ method so that the print function prints something new
 
         Args:
@@ -50,11 +54,11 @@ class Rectangle(Base):
 
         Returns:
             the new way of printing
-        '''
+        """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def area(self):
-        '''
+        """
         Calculates the area of the Rectangle
 
         Args:
@@ -62,11 +66,11 @@ class Rectangle(Base):
 
         Returns:
             The area of the Rectangle
-        '''
+        """
         return (self.__width * self.__height)
     
     def display(self):
-        '''
+        """
         Prints Rectangle with #
 
         Args:
@@ -74,7 +78,7 @@ class Rectangle(Base):
 
         Returns:
             Nothing
-        '''
+        """
         for n in range(self.__y):
             print()
         for n in range(self.__height):
@@ -85,7 +89,7 @@ class Rectangle(Base):
             print()
     
     def update(self, *args, **kwargs):
-        '''
+        """
         This function updates the values of various attributes or leaves them as is if not updated
 
         Args:
@@ -94,7 +98,7 @@ class Rectangle(Base):
 
         Returns:
             nothing
-        '''
+        """
         attributes = ['id', 'width', 'height', 'x', 'y']
         if args:
             for i, attr in zip(attributes, args): #zip attaches attribute names to corresponding args
