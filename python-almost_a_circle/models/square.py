@@ -22,7 +22,7 @@ class Square(Rectangle):
             Nothing/error
         '''
         super().__init__(size, size, x, y, id)
-        self.__size = size
+        self.__width = size
         self.__x = x
         self.__y = y
 
@@ -36,7 +36,7 @@ class Square(Rectangle):
         Returns:
             the new way of printing
         '''
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__size}"
+        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__width}"
 
     @property
     def size(self):
